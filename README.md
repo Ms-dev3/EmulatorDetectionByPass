@@ -111,7 +111,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
         </intent>
   </queries>
   ```
-* Sending commands from your app to termux.
+* Sending commands from your app to termux[^4].
   ```
   intent.setClassName("com.termux", "com.termux.app.RunCommandService")
   intent.action = "com.termux.RUN_COMMAND"
@@ -140,5 +140,6 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 [^1]: [Rooting emulator](https://avicoder.me/2021/09/02/Root-AVD-and-install-Magisk/)
 [^2]: [Frida setup on termux](https://github.com/frida/frida/discussions/2411)
 [^3]: [termux property edit](https://github.com/termux/termux-tasker#allow-external-apps-property-optional)
+[^4]: [Frida run commands](https://github.com/termux/termux-app/wiki/RUN_COMMAND-Intent)
 
 
