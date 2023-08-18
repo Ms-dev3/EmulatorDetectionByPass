@@ -123,7 +123,19 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   intent.putExtra("com.termux.RUN_COMMAND_BACKGROUND", true)
   intent.putExtra("com.termux.RUN_COMMAND_SESSION_ACTION", "4")
   startService(intent)
-  ```  
+  ```
+# Additional step
+* In case you encounter error while running frida command as below
+  ```
+  File "/data/data/com.termux/files/usr/lib/python3.11/re/_parser.py", line 455, in _parse_sub itemsappend(_parse(source, state, verbose, nested + 1
+  ```
+  you can enter following command as mentioned here [Link](https://github.com/frida/frida/issues/2372#issuecomment-1374208979)
+  > silverbullet-herr commented Jan 7, 2023 •
+
+try this:
+pip uninstall pygments && pip install pygments
+to install the latest version instead of the required version that's how it worked for me
+
 *References*
 [^1]: [Rooting emulator](https://avicoder.me/2021/09/02/Root-AVD-and-install-Magisk/)
 [^2]: [Frida setup on termux](https://github.com/frida/frida/discussions/2411)
