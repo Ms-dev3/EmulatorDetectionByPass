@@ -95,9 +95,26 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 * If working that our termux setup is complete.
   
 # Termux setup to accept external commands.  
-
+* Making termux accept external commands[3].
+  ```
+  value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/.termux/termux.properties"; mkdir -p "$(dirname "$file")"; chmod 700 "$(dirname "$file")"; if ! grep -E '^'"$key"'=.*' $file &>/dev/null; then [[ -s "$file" && ! -z "$(tail -c 1 "$file")" ]] && newline=$'\n' || newline=""; echo "$newline$key=$value" >> "$file"; else sed -i'' -E 's/^'"$key"'=.*/'"$key=$value"'/' $file; fi
+  ```
+* Sending commands from your app to termux.
+  ```
+  intent.setClassName("com.termux", "com.termux.app.RunCommandService")
+  intent.action = "com.termux.RUN_COMMAND"
+  intent.putExtra("com.termux.RUN_COMMAND_PATH", "/data/data/com.termux/files/usr/bin/frida")
+  intent.putExtra(
+            "com.termux.RUN_COMMAND_ARGUMENTS",
+            arrayOf("-H", "127.0.0.1", "-f", "your app package name", "-l", "/data/local/tmp/bypass.js")
+  )
+  intent.putExtra("com.termux.RUN_COMMAND_BACKGROUND", true)
+  intent.putExtra("com.termux.RUN_COMMAND_SESSION_ACTION", "4")
+  startService(intent)
+  ```  
 # References
 [^1]: [Rooting emulator](https://avicoder.me/2021/09/02/Root-AVD-and-install-Magisk/)
 [^2]: [Frida setup on termux](https://github.com/frida/frida/discussions/2411)
+[^3]: [termux property file edit](https://github.com/termux/termux-tasker#allow-external-apps-property-optional)
 
 
