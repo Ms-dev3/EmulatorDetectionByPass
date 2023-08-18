@@ -84,7 +84,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   cd /data/local/tmp
   ```
   ```
-  ./frida-server -l 127.0.0.1
+  ./frida-server -l <127.0.0.1>
   ```
   once above command is entered your cursor will move to next line and continue blinking.Leave this session of termux as it is and dont close it.
   To open a new session in termux swipe from the left edge to open a draw and select new session.
