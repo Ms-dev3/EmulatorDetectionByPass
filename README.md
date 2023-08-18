@@ -1,5 +1,6 @@
 # EmulatorByPass
 Download and setup emulator with any SDK version 12 or below with playstore of x86_64 arch.
+
 # Get magisk image flashing repo 
 * Download and extract rootAVD repo from this [Link](https://github.com/newbit1/rootAVD)
 * Open terminal on your pc and navigate to above extracted dir.
@@ -37,8 +38,10 @@ Download and setup emulator with any SDK version 12 or below with playstore of x
   ```
   and grant storage permission.
 * Your termux is not ready to use.
+  
 # Additional Apps/tools that are needed
 * Download and install root explorer apk.
+  
 # Setting up frida and other packages in termux
 * Enter command
   ```
@@ -90,5 +93,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   frida-ps -H 127.0.0.1
   ```
 * If working that our termux setup is complete.
+  
+# Termux setup to accept external commands.  
 
 
