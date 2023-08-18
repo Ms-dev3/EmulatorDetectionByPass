@@ -97,7 +97,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 # Termux setup to accept external commands.  
 
 # References
-[^1] [Rooting emulator]
-[^2] [Frida setup on termux](https://github.com/frida/frida/discussions/2411)
+[^1]:[Rooting emulator](https://avicoder.me/2021/09/02/Root-AVD-and-install-Magisk/)
+[^2]:[Frida setup on termux](https://github.com/frida/frida/discussions/2411)
 
 
