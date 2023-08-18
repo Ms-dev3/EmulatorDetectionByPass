@@ -95,7 +95,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 * If working that our termux setup is complete.
   
 # Termux setup to accept external commands.  
-* Making termux accept external commands[3].
+* Making termux accept external commands[^3].
   ```
   value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/.termux/termux.properties"; mkdir -p "$(dirname "$file")"; chmod 700 "$(dirname "$file")"; if ! grep -E '^'"$key"'=.*' $file &>/dev/null; then [[ -s "$file" && ! -z "$(tail -c 1 "$file")" ]] && newline=$'\n' || newline=""; echo "$newline$key=$value" >> "$file"; else sed -i'' -E 's/^'"$key"'=.*/'"$key=$value"'/' $file; fi
   ```
