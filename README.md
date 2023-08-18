@@ -99,6 +99,17 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   ```
   value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/.termux/termux.properties"; mkdir -p "$(dirname "$file")"; chmod 700 "$(dirname "$file")"; if ! grep -E '^'"$key"'=.*' $file &>/dev/null; then [[ -s "$file" && ! -z "$(tail -c 1 "$file")" ]] && newline=$'\n' || newline=""; echo "$newline$key=$value" >> "$file"; else sed -i'' -E 's/^'"$key"'=.*/'"$key=$value"'/' $file; fi
   ```
+* Before your app can transmit commands to termux you will have to enable certain permission and make the user grant them.
+  ```
+  <uses-permission android:name="com.termux.permission.RUN_COMMAND"/>
+  ```
+  ``` <queries>
+        <package android:name="com.termux" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+ ```
 * Sending commands from your app to termux.
   ```
   intent.setClassName("com.termux", "com.termux.app.RunCommandService")
