@@ -131,10 +131,9 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   ```
   you can enter following command as mentioned here [Link](https://github.com/frida/frida/issues/2372#issuecomment-1374208979)
   > silverbullet-herr commented Jan 7, 2023 •
-
-try this:
-pip uninstall pygments && pip install pygments
-to install the latest version instead of the required version that's how it worked for me
+  > try this:
+  > pip uninstall pygments && pip install pygments
+  > to install the latest version instead of the required version that's how it worked for me
 
 *References*
 [^1]: [Rooting emulator](https://avicoder.me/2021/09/02/Root-AVD-and-install-Magisk/)
