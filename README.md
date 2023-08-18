@@ -69,7 +69,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   ```
   pkg install frida-python
   ```
-# Frida server installation flow
+# [Frida server installation flow](https://github.com/frida/frida/discussions/2411)
 * Download latest version of frida-server based on device arc type [Link](https://github.com/frida/frida/releases)
 * Extract the zip and move the file in you emulator by draging and droping.
 * Open root explorer and navigate to root->sdcard->download where you will be able to locate your file.
