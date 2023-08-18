@@ -52,5 +52,10 @@ Download and setup emulator with any SDK version 12 or below with playstore of x
   ```
 export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 ```
+  if you extracted it on some other location, use that path.make sure you run above command without root/su.
+* Install frida and its commandline tools from pip
+  ```
+  pip install frida frida-tools
+  ```
 
 
