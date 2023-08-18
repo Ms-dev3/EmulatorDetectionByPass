@@ -1,7 +1,7 @@
 # Emulator Detection Bypass steps
 Download and setup emulator with any SDK version 12 or below with playstore of x86_64 arch.
 
-# Magisk image flashing [^1]   
+# Magisk image flashing[^1]   
 * Download and extract rootAVD repo from this [Link](https://github.com/newbit1/rootAVD)
 * Open terminal on your pc and navigate to above extracted dir.
 * trigger command as
@@ -97,7 +97,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 # Termux setup to accept external commands.  
 
 # References
-[^1]:[Rooting emulator](https://avicoder.me/2021/09/02/Root-AVD-and-install-Magisk/)
-[^2]:[Frida setup on termux](https://github.com/frida/frida/discussions/2411)
+[^1]: [Rooting emulator](https://avicoder.me/2021/09/02/Root-AVD-and-install-Magisk/)
+[^2]: [Frida setup on termux](https://github.com/frida/frida/discussions/2411)
 
 
