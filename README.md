@@ -57,6 +57,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   ```
   pip install frida frida-tools
   ```
+  ![image](https://user-images.githubusercontent.com/27184655/218310575-89d7d2c0-028d-4942-a5ea-edc96461d55f.jpg)
   Now Frida is available to use from commandline.you can check version by typeing ``` frida-ps --version ```
 * Optional steps if with above frida is giving error.
   ```
