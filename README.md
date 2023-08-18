@@ -95,6 +95,11 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   ```
   frida-ps -H 127.0.0.1
   ```
+  or you can run acutal bypass command as
+  ```
+  frida -H 127.0.0.1 -f your.packagename -l /data/local/tmp/bypass.js
+  ```
+  
 * If working that our termux setup is complete.
   
 # Termux setup to accept external commands.  
