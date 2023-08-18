@@ -1,7 +1,7 @@
 # Emulator Detection Bypass steps
 Download and setup emulator with any SDK version 12 or below with playstore of x86_64 arch.
 
-# Get magisk image flashing repo 
+# Magisk image flashing [^1]   
 * Download and extract rootAVD repo from this [Link](https://github.com/newbit1/rootAVD)
 * Open terminal on your pc and navigate to above extracted dir.
 * trigger command as
@@ -42,7 +42,7 @@ Download and setup emulator with any SDK version 12 or below with playstore of x
 # Additional Apps/tools that are needed
 * Download and install root explorer apk.
   
-# Setting up frida and other packages in termux[^1]
+# Setting up frida and other packages in termux[^2]
 * Enter command
   ```
   pkg install build-essential python python-pip git wget binutils openssl
@@ -69,7 +69,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   ```
   pkg install frida-python
   ```
-# [Frida server installation flow](https://github.com/frida/frida/discussions/2411)
+# Frida server installation flow
 * Download latest version of frida-server based on device arc type [Link](https://github.com/frida/frida/releases)
 * Extract the zip and move the file in you emulator by draging and droping.
 * Open root explorer and navigate to root->sdcard->download where you will be able to locate your file.
@@ -97,5 +97,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 # Termux setup to accept external commands.  
 
 # References
-[^1] https://github.com/frida/frida/discussions/2411
+[^1] [Rooting emulator]
+[^2] [Frida setup on termux](https://github.com/frida/frida/discussions/2411)
+
 
