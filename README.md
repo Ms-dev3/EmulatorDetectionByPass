@@ -91,7 +91,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   ```
   once above command is entered your cursor will move to next line and continue blinking.Leave this session of termux as it is and dont close it.
   To open a new session in termux swipe from the left edge to open a draw and select new session.
-* Move emulator bypass js file to /root/data/local/temp folder
+* Move emulator bypass js file to root->data->local->tmp
 * Now to check if you are able to connect with the server from in your new termux session enter below command to list all device process
   ```
   frida-ps -H 127.0.0.1
