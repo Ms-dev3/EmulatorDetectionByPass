@@ -77,6 +77,10 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 * Rename to file to frida-server
 * Long press on the file and select additional options from the top left and select permissions and enable execution rights to all user types. ![image](https://github.com/Ms-dev3/EmulatorByPass/assets/111139550/643e5ac9-8fb7-4273-b580-131e19bba2a5)
 * open termux and enter folling commands (When run su command, If App ask for the super permission allow it with press on Grant)
+* Goto your app permissions->Additional permmisions->allow Run command in termux terminal(Check below screenshots)
+![additional_ permissions](https://github.com/Ms-dev3/EmulatorDetectionByPass/assets/84759364/be6d9249-1a67-420e-90f4-f2173ee1ac28)
+![permissions_image](https://github.com/Ms-dev3/EmulatorDetectionByPass/assets/84759364/cfdeea4f-57a2-4409-a969-558e55d24b0f)
+
   ```
   su
   ```
