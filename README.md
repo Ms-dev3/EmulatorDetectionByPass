@@ -42,7 +42,7 @@ Download and setup emulator with any SDK version 12 or below with playstore of x
 # Additional Apps/tools that are needed
 * Download and install root explorer apk.
   
-# Setting up frida and other packages in termux
+# [Setting up frida and other packages in termux](https://github.com/frida/frida/discussions/2411)
 * Enter command
   ```
   pkg install build-essential python python-pip git wget binutils openssl
