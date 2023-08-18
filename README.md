@@ -70,13 +70,13 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   pkg install frida-python
   ```
 # Frida server installation flow
-* Download latest version of frida-server based on device arc type [Link](https://github.com/frida/frida/releases)
+* Download latest version of frida-server based on device arc type(file name containd server and android) [Link](https://github.com/frida/frida/releases)
 * Extract the zip and move the file in you emulator by draging and droping.
 * Open root explorer and navigate to root->sdcard->download where you will be able to locate your file.
 * Move the file to root->data->local->tmp.
 * Rename to file to frida-server
 * Long press on the file and select additional options from the top left and select permissions and enable execution rights to all user types. ![image](https://github.com/Ms-dev3/EmulatorByPass/assets/111139550/643e5ac9-8fb7-4273-b580-131e19bba2a5)
-* open termux and enter folling commands
+* open termux and enter folling commands (When run su command, If App ask for the super permission allow it with press on Grant)
   ```
   su
   ```
