@@ -80,7 +80,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 * Goto your app permissions->Additional permmisions->allow Run command in termux terminal(Check below screenshots)
 ![additional_ permissions](https://github.com/Ms-dev3/EmulatorDetectionByPass/assets/84759364/be6d9249-1a67-420e-90f4-f2173ee1ac28)
 ![permissions_image](https://github.com/Ms-dev3/EmulatorDetectionByPass/assets/84759364/cfdeea4f-57a2-4409-a969-558e55d24b0f)
-
+* Now to start the server enter following commands.
   ```
   su
   ```
