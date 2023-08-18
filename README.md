@@ -81,7 +81,7 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
 * open termux and enter folling commands (When run su command, If App ask for the super permission allow it with press on Grant)
 * Goto your app permissions->Additional permmisions->allow Run command in termux terminal(Check below screenshots)
 <img src="https://i.imgur.com/OHC7pO5.jpg" alt="Additional permissions" width="230" height="500"> <img src="https://i.imgur.com/J6rcGnQ.jpg" alt="permissions image" width="230" height="500">
-* Now to start the server enter following commands.
+* Now to start the server entering following commands.
   ```
   su
   ```
