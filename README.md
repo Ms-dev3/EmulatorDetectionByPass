@@ -48,9 +48,6 @@ Download and setup emulator with any SDK version 12 or below with playstore of x
 *  Extract the zip and move the fils in your emulator (there will be 4 files)
 *  Open root explorer and navigate to root->sdcard->downloads you will be able to locate your files that you had recently copied to this device.
 *  Move these files to root->sdcard->devkit(make a new dir).
-*  open termux and enter command
-  ```
-  export FRIDA_CORE_DEVKIT=/sdcard/devkit/
-  ```
+*  Open termux and enter command```export FRIDA_CORE_DEVKIT=/sdcard/devkit/```
 
 
