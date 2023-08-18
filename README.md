@@ -108,8 +108,8 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
         <intent>
             <action android:name="android.intent.action.MAIN" />
         </intent>
-    </queries>
- ```
+    </queries>```
+
 * Sending commands from your app to termux.
   ```
   intent.setClassName("com.termux", "com.termux.app.RunCommandService")
