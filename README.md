@@ -84,6 +84,9 @@ export FRIDA_CORE_DEVKIT=/sdcard/devkit/
   cd /data/local/tmp
   ```
   ```
+  ls (It will shows you a dir and files of the tmp dir)
+  ```
+  ```
   ./frida-server -l 127.0.0.1
   ```
   once above command is entered your cursor will move to next line and continue blinking.Leave this session of termux as it is and dont close it.
